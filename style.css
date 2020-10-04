@@ -1,5 +1,5 @@
 body {
-	background-image: url("pic4.jpg");
+	background-image: url("images/pic4.jpg");
 	height: 500px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -7,7 +7,7 @@ body {
 	background-color: #cccccc;
 }
 
-.content {
+#list {
 	margin: 150px;
 	text-align: center;
 }
