@@ -52,9 +52,12 @@ body {
   font-size: 13px;
 }
 
+#border { border: 5px solid black;
+}
 
-
-
+#type {
+	font-weight: bold;
+}
 
 
 
