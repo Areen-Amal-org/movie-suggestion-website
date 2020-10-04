@@ -52,12 +52,17 @@ body {
   font-size: 13px;
 }
 
-#border { border: 5px solid black;
+#list { border: 5px solid black;
 }
 
 #type {
 	font-weight: bold;
 }
 
-
+#home {
+	top: 15px;
+	left: 250px;
+	position: fixed;
+	margin-bottom: 50px;
+}
 
