@@ -1,0 +1,60 @@
+body {
+	background-image: url("pic4.jpg");
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #cccccc;
+}
+
+.content {
+	margin: 150px;
+	text-align: center;
+}
+
+.header {
+  background: black;
+  color: grey;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: 0.2s;
+} 
+
+
+#logo{ 
+	position:fixed;
+	margin-top: 10px; 
+	margin-left: 10px;
+	top:0; 
+	left:0; 
+} 
+
+#pop{ 
+	position:fixed; 
+	margin-top: 5px; 
+	margin-left: 10px;
+	top:0; 
+	right:0; 
+} 
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: grey;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
