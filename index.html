@@ -6,29 +6,41 @@
     <title>Movies Suggestion</title>
   </head>
   <body>
-  	<h1>logo</h1>
-  	<h1 id="h1">Choose the appropriate movie based on your mood!</h1>
-    <div>
-    <select id='input'>
-  <option>select your category</option>
-  <option>Action</option>
-  <option>Romance</option>
-  <option>Comedy</option>
-  <option>Horror</option>
-  <option>Drama</option>
-</select>
-<br>
-  	<button id="enter">suggest a movie</button>
-    <div id= 'lists'>
-     <ol id = 'action'></ol>
-     <ol id = 'romance'></ol>
-     <ol id = 'drama'></ol>
-     <ol id = 'comedy'></ol>
-     <ol id = 'horror'></ol>
-
-
-    </div>
-    </div>
+    <div class="header">    
+        <h4 class="header1">IT'S SHOW TIME ...</h4>
+        <h4 class="header2">Choose the appropriate movie based on your mood !</h4>
+   </div>
+   <div id="logo"> 
+       <img src="images/logo.jpg" width="70" height="70"> 
+   </div> 
+   <div id="pop"> 
+         <img src="images/popcorn.jpg" width="70" height="70"> 
+   </div> 
+   <div id="list">
+      <div id="border">
+      <p id="type">Select your movie type:</p>
+      <select id='input'>
+           <option>select your category</option>
+           <option>Action</option>
+           <option>Romance</option>
+           <option>Comedy</option>
+           <option>Horror</option>
+           <option>Drama</option>
+      </select>
+      <br>
+  	  <button id="enter">suggest a movie</button>
+   <div id= 'lists'>
+      <ul id = 'action'></ul>
+      <ul id = 'romance'></ul>
+      <ul id = 'drama'></ul>
+      <ul id = 'comedy'></ul>
+      <ul id = 'horror'></ul>
+   </div>
+   </div>
+   </div>
+   <div class="footer">
+        <p>Movies Suggestion website is optimized for finding out your favorite movie based on it's type. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 2020. All Rights Reserved.</p>
+   </div>
   	<script src="main.js"></script>
   </body>
 </html>

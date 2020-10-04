@@ -1,15 +1,15 @@
-console.log("fjfj")
 function each (array, func){
   for ( var i =0 ; i < array.length; i++){
     func(array[i]);
   }
 }
-var category=['Romance','Action','Drama','Horror','Comedy']
+var category=['Romance','Action','Drama','Horror','Comedy'];
 $("#enter").keypress( function(event) {
 	if(event.keyCode === 13) {
 		$("#GFG_Button").click();
 	}
 });
+
 
 $("#enter").click(function() {
 	if(category[1] === $('#input').val()){
@@ -32,8 +32,29 @@ else if(category[3]=== $('#input').val()){
 			'<li> IT<br><img src= "it.jpg" id="it"> <br><button class="bt1">Press For More Information</button></li><br> ',
 			'<li> The Conjuring <br><img src= "the conjuring.jpg" id="conjuring"><br><button class="bt1">Press For More Information</button></li><br>',
 			'<li> Sinister <br><img src= "sinister.jpg" id="sinister"><br><button class="bt1">Press For More Information</button></li><br>')
-	}
 
+	}else if (category[0] === $('#input').val()) {
+		$("#romance").append(
+			'<li> The Longest Ride <br> <img src= "images/ride.jpg" id="image1"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>', 
+			'<li> The Theory of Everything <br> <img src="images/theory.jpg" id="image2"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li> ',
+			'<li> The Fault in Our Stars <br> <img src="images/stars.jpg" id="image3"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li> ',
+			'<li> Falling Inn Love <br> <img src="images/inn.jpg" id="image4"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li> ',
+			'<li> A Star Is Born <br> <img src="images/born.png" id ="image5"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li> ',
+			'<li> Love Story <br> <img src="images/love.jpg" id ="image6"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li> ',
+			'<li> 6 Years <br> <img src="images/6.jpg" id ="image7"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li> ',
+			'<li> Breathe <br> <img src="images/breathe.jpg" id ="image8"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>')
+	} 
+    else if (category[2] === $('#input').val()) {
+		$('#drama').append(
+			'<li> The Judge <br> <img src= "images/Judge.jpg" id="i1"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>', 
+			'<li> Good Will Hunting <br> <img src= "images/good.jpg" id="i2"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>',
+			'<li> Snitch <br> <img src="images/snitch.jpg" id ="i3"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>',
+			'<li> Bronson <br> <img src="images/bronson.jpg" id ="i4"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>',
+			'<li> All Day and a Night <br> <img src="images/all.jpg" id ="i5"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>',
+			'<li> True Story <br> <img src="images/true.jpg" id ="i6"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>',
+			'<li> Black Mass <br> <img src="images/black.jpg" id ="i7"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>',
+			'<li> Four Brothers <br> <img src="images/four.jpg" id ="i8"> <br> <button class="bt"> Press For More Information </button> <br><br><br> </li>')
+    }
 else if(category[4]=== $('#input').val()){
 	$('#comedy').append(
 		'<li> Blended <br><img src= "blended.jpg" id="blended"> <br><button class="bt1">Press For More Information</button></li><br> ',
@@ -44,8 +65,4 @@ else if(category[4]=== $('#input').val()){
 		'<li> Ride Along <br><img src= "ride along.jpg" id="ride"> <br><button class="bt1">Press For More Information</button></li><br>',
 		'<li> The Hustle <br><img src= "the hustle.jpg" id="hustle"> <br><button class="bt1">Press For More Information</button></li><br>')
 }
-})
-
-$('ol li #ai').click(function(){
-	console.log("fgjhjk")
 })
