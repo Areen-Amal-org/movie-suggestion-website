@@ -1,5 +1,5 @@
 body {
-	background-image: url("images/pic4.jpg");
+	background-image: url("images/ar.jpg");
 	height: 500px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -52,7 +52,26 @@ body {
   font-size: 13px;
 }
 
-#list { border: 5px solid black;
+#list {
+	background-image: url("images/blackk.jpg");
+    margin-top: 350px; 
+	border: 4px solid black;
+}
+
+#input {
+     background-color: black;
+     color: #e7e7e7;
+	font-size: 15px;
+	font-weight: bold;
+	border: 2px solid grey;
+	width: 100%;
+}
+
+#enter {
+     background-color: black;
+     color: #e7e7e7;
+	font-size: 15px;
+	font-weight: bold;
 }
 
 #type {
@@ -72,3 +91,25 @@ body {
 	text-align: center;
 }
 
+li {
+	font-family: Verdana;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+
+}
+
+.style {
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+#f {
+     background-color: black;
+     color: #e7e7e7;
+	font-size: 15px;
+	font-weight: bold;
+
+}

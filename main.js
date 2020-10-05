@@ -13,60 +13,60 @@ $("#enter").keypress( function(event) {
 var x = $("#enter").click(function() {
 	$("#list").hide();
 	$("body").css(
-	"background-image", "url('images/unnamed.jpg')"
+	"background-image", "url('images/pics.jpg')"
 	).css("background-repeat", "repeat");
 	if (category[0] === $('#input').val()) {
 		$("#romance").append(
-			'<li> The Longest Ride <br> <img src= "images/ride.jpg" id="image1" width="350" height="350"> <br> <button id="but1"> Press For More Information </button> <br><br><br> <ul id="details1"> </ul> <br><br><br> </li>', 
-			'<li> The Theory of Everything <br> <img src="images/theory.jpg" id="image2" width="350" height="350"> <br> <button id="but2"> Press For More Information </button> <br><br><br> <ul id="details2"> </ul> </li> ',
-			'<li> The Fault in Our Stars <br> <img src="images/stars.jpg" id="image3" width="350" height="350"> <br> <button id="but3"> Press For More Information </button> <br><br><br> <ul id="details3"> </ul> </li> ',
-			'<li> Falling Inn Love <br> <img src="images/inn.jpg" id="image4" width="350" height="350"> <br> <button id="but4"> Press For More Information </button> <br><br><br> <ul id="details4"> </ul> </li> ',
-			'<li> A Star Is Born <br> <img src="images/born.png" id ="image5" width="350" height="350"> <br> <button id="but5"> Press For More Information </button> <br><br><br> <ul id="details5"> </ul> </li> ',
-			'<li> Love Story <br> <img src="images/love.jpg" id ="image6" width="350" height="350"> <br> <button id="but6"> Press For More Information </button> <br><br><br> <ul id="details6"> </ul> </li> ',
-			'<li> 6 Years <br> <img src="images/6.jpg" id ="image7" width="350" height="350"> <br> <button id="but7"> Press For More Information </button> <br><br><br> <ul id="details7"> </ul> </li> ',
-			'<li> Breathe <br> <img src="images/breathe.jpg" id ="image8" width="350" height="350"> <br> <button id="but8"> Press For More Information </button> <br><br><br> <ul id="details8"> </ul> </li>')
+			'<li> The Longest Ride <br><br> <img src= "images/ride.jpg" id="image1" width="350" height="350"> <br> <button id="but1" class="style"> Press For More Information </button><br> <ul id="details1"> </ul> <br><br> </li>', 
+			'<li> The Theory of Everything <br><br> <img src="images/theory.jpg" id="image2" width="350" height="350"> <br> <button id="but2" class="style"> Press For More Information </button> <br><ul id="details2"> </ul> <br><br> </li> ',
+			'<li> The Fault in Our Stars <br><br> <img src="images/stars.jpg" id="image3" width="350" height="350"> <br> <button id="but3" class="style"> Press For More Information </button> <br> <ul id="details3"> </ul> <br><br></li>',
+			'<li> Falling Inn Love <br><br> <img src="images/inn.jpg" id="image4" width="350" height="350"> <br> <button id="but4" class="style"> Press For More Information </button> <br> <ul id="details4"> </ul> <br><br> </li> ',
+			'<li> A Star Is Born <br><br> <img src="images/born.png" id ="image5" width="350" height="350"> <br> <button id="but5" class="style"> Press For More Information </button> <br> <ul id="details5"> </ul> <br><br></li> ',
+			'<li> Love Story <br><br> <img src="images/love.jpg" id ="image6" width="350" height="350"> <br> <button id="but6" class="style"> Press For More Information </button> <br> <ul id="details6"> </ul><br><br> </li> ',
+			'<li> 6 Years <br><br> <img src="images/6.jpg" id ="image7" width="350" height="350"> <br> <button id="but7" class="style"> Press For More Information </button> <br> <ul id="details7"> </ul> <br><br></li> ',
+			'<li> Breathe <br><br> <img src="images/breathe.jpg" id ="image8" width="350" height="350"> <br> <button id="but8" class="style"> Press For More Information </button> <br> <ul id="details8"> </ul><br><br></li>')
 	}
     else if(category[1] === $('#input').val()){
 			 $('#action').append(
-			 	'<li> Inception <br><img src= "images/Inception.jpg" id="inception" width="350" height="350"><br><button id ="a1">Press For More Information</button><br><br><br><ul id ="det1"</ul></li><br>' ,
-			 	'<li>V For Vendetta <br><img src= "images/V for Vendetta.png" id="V" width="350" height="350"><br> <button id="a2">Press For More Information</button><br><br><br><ul id ="det2"</ul></li><br>',
-			 	'<li>The Dark Knight<br><img src="images/the dark knight.jpg" id ="The Dark Knight" width="350" height="350"><br><button id="a3">Press For More Information</button><br><br><br><ul id ="det3"</ul></li><br>',
-			 	'<li>The Hunger Games <br><img src="images/the hunger games.jpg" id ="the hunger games" width="350" height="350"><br> <button id="a4">Press For More Information</button><br><br><br><ul id ="det4"</ul></li><br>',
-			 	'<li>Avengers<br><img src="images/avengers.jpg" id ="avengers" width="350" height="350"> <br><button id ="a5">Press For More Information</button><br><br><br><ul id ="det5"</ul></li><br> ',
-			 	'<li>Red<br><img src="images/red.jpg" id ="red" width="350" height="350"><br> <button id ="a6">Press For More Information</button><br><br><br><ul id ="det6"</ul></li><br>' ,
-			 	'<li>John Wick<br><img src="images/john wick.jpg" id ="john" width="350" height="350"><br><button id="a7">Press For More Information</button><br><br><br><ul id ="det7"</ul></li><br>',
-			 	'<li>The Town<br><img src="images/town.jpg" id ="town" width="350" height="350"><br><button id="a8">Press For More Information</button><br><br><br><ul id ="det8"</ul></li><br>')
+			 	'<li> Inception <br><br> <img src= "images/Inception.jpg" id="inception" width="350" height="350"><br><button id ="a1">Press For More Information</button><br><ul id ="det1"></ul> <br><br></li>' ,
+			 	'<li>V For Vendetta <br><br> <img src= "images/V for Vendetta.png" id="V" width="350" height="350"><br> <button id="a2">Press For More Information</button><br><ul id ="det2"></ul> <br><br></li>',
+			 	'<li>The Dark Knight <br><br> <img src="images/the dark knight.jpg" id ="The Dark Knight" width="350" height="350"><br><button id="a3">Press For More Information</button><br><ul id ="det3"></ul> <br><br></li>',
+			 	'<li>The Hunger Games <br><br> <img src="images/the hunger games.jpg" id ="the hunger games" width="350" height="350"><br> <button id="a4">Press For More Information</button><br><ul id ="det4"></ul> <br><br></li>',
+			 	'<li>Avengers <br><br> <img src="images/avengers.jpg" id ="avengers" width="350" height="350"> <br><button id ="a5">Press For More Information</button><br><ul id ="det5"></ul> <br><br></li>',
+			 	'<li>Red <br><br> <img src="images/red.jpg" id ="red" width="350" height="350"><br> <button id ="a6">Press For More Information</button><br><ul id ="det6"></ul> <br><br></li>' ,
+			 	'<li>John Wick <br><br> <img src="images/john wick.jpg" id ="john" width="350" height="350"><br><button id="a7">Press For More Information</button><br><ul id ="det7"></ul> <br><br></li>',
+			 	'<li>The Town <br><br> <img src="images/town.jpg" id ="town" width="350" height="350"><br><button id="a8">Press For More Information</button><br><ul id ="det8"></ul> <br><br></li>')
     }     
     else if (category[2] === $('#input').val()) {
 		$('#drama').append(
-			'<li> The Judge <br> <img src= "images/Judge.jpg" id="i1" width="350" height="350"> <br> <button id="bt1"> Press For More Information </button> <br><br><br> <ul id="deta1"> </ul> </li>', 
-			'<li> Good Will Hunting <br> <img src= "images/good.jpg" id="i2" width="350" height="350"> <br> <button id="bt2"> Press For More Information </button> <br><br><br> <ul id="deta2"> </ul> </li>',
-			'<li> Snitch <br> <img src="images/snitch.jpg" id ="i3" width="350" height="350"> <br> <button id="bt3"> Press For More Information </button> <br><br><br> <ul id="deta3"> </ul> </li>',
-			'<li> Bronson <br> <img src="images/bronson.jpg" id ="i4" width="350" height="350"> <br> <button id="bt4"> Press For More Information </button> <br><br><br> <ul id="deta4"> </ul> </li>',
-			'<li> All Day and a Night <br> <img src="images/all.jpg" id ="i5" width="350" height="350"> <br> <button id="bt5"> Press For More Information </button> <br><br><br> <ul id="deta5"> </ul> </li>',
-			'<li> True Story <br> <img src="images/true.jpg" id ="i6" width="350" height="350"> <br> <button id="bt6"> Press For More Information </button> <br><br><br> <ul id="deta6"> </ul> </li>',
-			'<li> Black Mass <br> <img src="images/black.jpg" id ="i7" width="350" height="350"> <br> <button id="bt7"> Press For More Information </button> <br><br><br> <ul id="deta7"> </ul> </li>',
-			'<li> Four Brothers <br> <img src="images/four.jpg" id ="i8" width="350" height="350"> <br> <button id="bt8"> Press For More Information </button> <br><br><br> <ul id="deta8"> </ul> </li>')
+			'<li> The Judge <br><br> <img src= "images/Judge.jpg" id="i1" width="350" height="350"> <br> <button id="bt1"> Press For More Information </button> <br> <ul id="deta1"> </ul> <br><br></li>', 
+			'<li> Good Will Hunting <br> <br><img src= "images/good.jpg" id="i2" width="350" height="350"> <br> <button id="bt2"> Press For More Information </button> <br> <ul id="deta2"> </ul><br><br> </li>',
+			'<li> Snitch <br><br> <img src="images/snitch.jpg" id ="i3" width="350" height="350"> <br> <button id="bt3"> Press For More Information </button> <br> <ul id="deta3"> </ul> <br><br></li>',
+			'<li> Bronson <br><br> <img src="images/bronson.jpg" id ="i4" width="350" height="350"> <br> <button id="bt4"> Press For More Information </button> <br> <ul id="deta4"> </ul> <br><br></li>',
+			'<li> All Day and a Night <br><br> <img src="images/all.jpg" id ="i5" width="350" height="350"> <br> <button id="bt5"> Press For More Information </button> <br> <ul id="deta5"> </ul><br><br> </li>',
+			'<li> True Story <br> <br><img src="images/true.jpg" id ="i6" width="350" height="350"> <br> <button id="bt6"> Press For More Information </button> <br> <ul id="deta6"> </ul><br><br> </li>',
+			'<li> Black Mass <br><br> <img src="images/black.jpg" id ="i7" width="350" height="350"> <br> <button id="bt7"> Press For More Information </button> <br> <ul id="deta7"> </ul> <br><br></li>',
+			'<li> Four Brothers <br><br> <img src="images/four.jpg" id ="i8" width="350" height="350"> <br> <button id="bt8"> Press For More Information </button> <br> <ul id="deta8"> </ul> <br><br></li>')
     }
     else if(category[3] === $('#input').val()){
 		$('#horror').append(
-			'<li> Annabella<br><img src= "images/annabella.jpg" id="annabella" width="350" height="350"><br><button id="h1">Press For More Information</button><br><br><br><ul id ="detail1"</ul></li><br>',
-			'<li> The Nun <br><img src= "images/the nun.jpg" id="nun" width="350" height="350"><br><button id="h2">Press For More Information</button><br><br><br><ul id ="detail2"</ul></li><br>',
-			'<li> A Quiet Place <br><img src= "images/a quiet place.jpg" id="quiet" width="350" height="350"><br><button id="h3">Press For More Information</button><br><br><br><ul id ="detail3"</ul></li><br>',
-			'<li> Get Out <br><img src= "images/get out.jpg" id="getout" width="350" height="350"><br><button id="h4">Press For More Information</button><br><br><br><ul id ="detail4"</ul></li><br> ',
-			'<li> IT<br><img src= "images/it.jpg" id="it" width="350" height="350"> <br><button id="h5">Press For More Information</button><br><br><br><ul id ="detail5"</ul></li><br> ',
-			'<li> The Conjuring <br><img src= "images/the conjuring.jpg" id="conjuring" width="350" height="350"><br><button id="h6">Press For More Information</button><br><br><br><ul id ="detail6"</ul></li><br>',
-			'<li> Sinister <br><img src= "images/sinister.jpg" id="sinister" width="350" height="350"><br><button id="h7">Press For More Information</button><br><br><br><ul id ="detail7"</ul></li><br>')
+			'<li> Annabella<br><br><img src= "images/annabella.jpg" id="annabella" width="350" height="350"><br><button id="h1">Press For More Information</button><br><ul id ="detail1"></ul><br><br></li>',
+			'<li> The Nun <br><br><img src= "images/the nun.jpg" id="nun" width="350" height="350"><br><button id="h2">Press For More Information</button><br><ul id ="detail2"></ul><br><br></li>',
+			'<li> A Quiet Place <br><br><img src= "images/a quiet place.jpg" id="quiet" width="350" height="350"><br><button id="h3">Press For More Information</button><br><ul id ="detail3"></ul><br><br></li>',
+			'<li> Get Out <br><br><img src= "images/get out.jpg" id="getout" width="350" height="350"><br><button id="h4">Press For More Information</button><br><ul id ="detail4"></ul><br><br></li>',
+			'<li> IT<br><br><img src= "images/it.jpg" id="it" width="350" height="350"> <br><button id="h5">Press For More Information</button><br><ul id ="detail5"></ul><br><br></li> ',
+			'<li> The Conjuring <br><br><img src= "images/the conjuring.jpg" id="conjuring" width="350" height="350"><br><button id="h6">Press For More Information</button><br><ul id ="detail6"></ul><br><br></li>',
+			'<li> Sinister <br><br><img src= "images/sinister.jpg" id="sinister" width="350" height="350"><br><button id="h7">Press For More Information</button><br><ul id ="detail7"></ul><br><br></li>')
 	}
 	else if(category[4]=== $('#input').val()) {
 	    $('#comedy').append(
-		   '<li> Blended <br><img src= "images/blended.jpg" id="blended" width="350" height="350"> <br><button id="c1">Press For More Information</button> <ul id="de1"> </ul> </li><br> ',
-		   '<li> Brides Maids<br><img src= "images/bridesmaids.jpg" id="bridsmaids" width="350" height="350"><br><button id="c2">Press For More Information</button> <ul id="de2"> </ul> </li><br>',
-		   '<li> GrownUps <br><img src= "images/grown ups.jpg" id="grownups" width="350" height="350"><br><button id="c3">Press For More Information</button> <ul id="de3"> </ul> </li><br> ',
-		   '<li> We Are The Millers <br><img src= "images/millers.jpg" id="millers" width="350" height="350"><br><button id="c4">Press For More Information</button> <ul id="de4"> </ul> </li><br>',
-		   '<li> Night School <br><img src= "images/Night-School.jpg" id="Night-School" width="350" height="350"><br><button id="c5">Press For More Information</button> <ul id="de5"> </ul> </li><br> ',
-		   '<li> Ride Along <br><img src= "images/ride along.jpg" id="ride" width="350" height="350"> <br><button id="c6">Press For More Information</button> <ul id="de6"> </ul> </li><br>',
-		   '<li> The Hustle <br><img src= "images/the hustle.jpg" id="hustle" width="350" height="350"> <br><button id="c7">Press For More Information</button> <ul id="de7"> </ul> </li><br>')
+		   '<li> Blended <br><br><img src= "images/blended.jpg" id="blended" width="350" height="350"> <br><button id="c1">Press For More Information</button> <ul id="de1"> </ul> <br><br></li> ',
+		   '<li> Brides Maids<br><br><img src= "images/bridesmaids.jpg" id="bridsmaids" width="350" height="350"><br><button id="c2">Press For More Information</button> <ul id="de2"> </ul> <br><br></li>',
+		   '<li> GrownUps <br><br><img src= "images/grown ups.jpg" id="grownups" width="350" height="350"><br><button id="c3">Press For More Information</button> <ul id="de3"> </ul><br><br> </li> ',
+		   '<li> We Are The Millers <br><br><img src= "images/millers.jpg" id="millers" width="350" height="350"><br><button id="c4">Press For More Information</button> <ul id="de4"> </ul> <br><br></li>',
+		   '<li> Night School <br><br><img src= "images/Night-School.jpg" id="Night-School" width="350" height="350"><br><button id="c5">Press For More Information</button> <ul id="de5"> </ul><br><br> </li> ',
+		   '<li> Ride Along <br><br><img src= "images/ride along.jpg" id="ride" width="350" height="350"> <br><button id="c6">Press For More Information</button> <ul id="de6"> </ul><br><br> </li>',
+		   '<li> The Hustle <br><br><img src= "images/the hustle.jpg" id="hustle" width="350" height="350"> <br><button id="c7">Press For More Information</button> <ul id="de7"> </ul><br><br> </li>')
      }
      $("#home").append("<button id='f'> Back To Home </button>");
 });
