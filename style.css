@@ -66,3 +66,9 @@ body {
 	margin-bottom: 50px;
 }
 
+#lists {
+	margin-top: 120px;
+	list-style-position: inside;
+	text-align: center;
+}
+
